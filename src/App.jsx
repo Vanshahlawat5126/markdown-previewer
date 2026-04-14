@@ -63,7 +63,7 @@ export default function App() {
         <div className="pane-header">Preview</div>
         <div
           id="preview"
-          dangerouslySetInnerHTML={{ __html: marked(markdown) }}
+          dangerouslySetInnerHTML={{ __html: marked(markdown, { breaks: true }) }}
         />
       </div>
     </div>
